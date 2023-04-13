@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { FormArrayExapleComponent } from './components/form-array-exaple/form-array-exaple.component';
+import { FormBuilderComponent } from './components/form-builder/form-builder.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormArrayExapleComponent,
+    FormBuilderComponent
   ],
   imports: [
     BrowserModule,

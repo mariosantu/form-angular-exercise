@@ -1,24 +1,6 @@
-.container {
-    width: 27%;
-    margin: auto;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* p {
-    display: none;
-}
-
-.display {
-    display: block;
-} */
-
-.border-red {
-    border: 1px solid red;
-}
-
-.red {
-    color: red;
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
 }

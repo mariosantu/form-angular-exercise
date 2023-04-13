@@ -1,0 +1,58 @@
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #15172b;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.formValue {
+    background-color: #15172b;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.addressForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.red {
+    color: red;
+}
+
+p {
+    display: block;
+    padding-top: 10px;
+}
+
+button {
+    display: none;
+}
+
+input {
+    padding: 3px;
+    background-color: #303245;
+    border-radius: 5px;
+    outline: none;
+}
+
+span {
+    font-weight: bold;
+}

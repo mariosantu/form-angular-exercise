@@ -8,61 +8,51 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'form-pratice';
+  // title = 'form-pratice';
 
-  homeform!: FormGroup;
+  // homeform!: FormGroup;
 
-  get name() {
-    return this.homeform.get('name');
-  }
+  // get name() {
+  //   return this.homeform.get('name');
+  // }
 
-  get surname() {
-    return this.homeform.get('surname');
-  }
+  // get surname() {
+  //   return this.homeform.get('surname');
+  // }
 
-  get email() {
-    return this.homeform.get('email');
-  }
+  // get email() {
+  //   return this.homeform.get('email');
+  // }
 
-  get cod() {
-    return this.homeform.get('cod');
-  }
+  // get cod() {
+  //   return this.homeform.get('cod');
+  // }
 
 
 
-  constructor(private fb: FormBuilder) {}
+  // constructor(private fb: FormBuilder) {}
 
-  ngOnInit(): void {
-    // this.homeform = new FormGroup({
-    //   name: new FormControl(null, [Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]),
-    //   surname: new FormControl(null, [Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]),
-    //   email: new FormControl(null, [Validators.required, Validators.email, Validators.minLength(16)]),
-    //   cod: new FormControl(null, Validators.minLength(16)),
-    //   note: new FormControl(null)
-    // });
+  // ngOnInit(): void {
+    
+  //   this.homeform = this.fb.group({
+  //     name: ['',[Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]],
+  //     surname: new FormControl(null, [Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]),
+  //     email: new FormControl(null, [Validators.required, Validators.email]),
+  //     cod: new FormControl(null, [Validators.required, Validators.minLength(16)]),
+  //     note: new FormControl(null)
+  //   })
 
-    this.homeform = this.fb.group({
-      name: ['',[Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]],
-      surname: new FormControl(null, [Validators.required, Validators.minLength(3),Validators.pattern('^[a-zA-Z ]*$')]),
-      email: new FormControl(null, [Validators.required, Validators.email]),
-      cod: new FormControl(null, [Validators.required, Validators.minLength(16)]),
-      note: new FormControl(null)
-    })
+  //   this.homeform.markAllAsTouched();
 
-    this.homeform.markAllAsTouched();
-    // ,{updateOn:'submit'}
+  // } 
 
-  } 
+  // onSubmit() {
+  //   console.log(this.homeform);
 
-  onSubmit() {
-    console.log(this.homeform);
+  //   if(this.homeform.invalid) {
+  //     this.homeform.markAllAsTouched();
+  //   }
 
-    if(this.homeform.invalid) {
-      this.homeform.markAllAsTouched();
-    }
-
-    // if(!this.homeform.get('name')!.valid && this.homeform.get('name')!.touched) {
-
-    // }
-  }
+    
+  // }
 }
