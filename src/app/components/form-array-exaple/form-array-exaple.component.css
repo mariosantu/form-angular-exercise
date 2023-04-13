@@ -1,0 +1,66 @@
+.wrapper {
+    width: 30%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #15172b;
+}
+
+form {
+    align-self: center;
+    padding-top: 40px;
+}
+
+input {
+    padding: 3px;
+    background-color: #303245;
+    border-radius: 5px;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+button .add {
+    display: inline-block;
+    
+}
+
+.submit {
+    display: block;
+    background-color: rgb(24, 174, 24);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.add {
+    padding: 5px 20px;
+    background-color: rgb(83, 186, 186);
+    border-radius: 5px;
+}
+
+.del {
+    padding: 0 5px ;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.formValue {
+    padding-top: 23px;
+}
